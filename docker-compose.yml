@@ -7,7 +7,8 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./todo:/app
+      # - ./todo:/app
+      - ./main:/app
     command: >
       bash -c "
         go run ./server.go
