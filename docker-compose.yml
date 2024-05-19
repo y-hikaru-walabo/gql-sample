@@ -11,6 +11,7 @@ services:
       - ./main:/app
     command: >
       bash -c "
+        go run github.com/99designs/gqlgen generate &&
         go run ./server.go
       "
     ports:
